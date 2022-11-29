@@ -4,7 +4,7 @@
 
 <h2>HTML Forms</h2>
 
-<form action="{{url('toto')}}" method="post">
+<form action="{{url('')}}" method="post">
   <label for="numberSet">Toto number:</label><br>
   <input type="text" id="numberSet" name="numberSet" value=""><br><br>
   <label for="c">C:</label><br>
