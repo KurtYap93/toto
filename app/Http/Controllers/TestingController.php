@@ -22,18 +22,19 @@ class TestingController extends Controller
         // $number = explode('', $input['numberSet']);
         // dd(strlen($input['numberSet']));
         $pattern = [];
-        for ($i=0; $i < strlen($input['numberSet']); $i++) { 
-            if(in_array($input['numberSet'][$i], $c))
-                array_push($pattern, 'c');
-            else if(in_array($input['numberSet'][$i], $ms))
-                array_push($pattern, 'ms');
-            else if(in_array($input['numberSet'][$i], $db))
-                array_push($pattern, 'db');
-            else if(in_array($input['numberSet'][$i], $of))
-                array_push($pattern, 'of');
-           	else if(in_array($input['numberSet'][$i], $h))
-                array_push($pattern, 'h');
-        }
+        $pattern = explode(',', strtolower($input['patternGiven']));
+        // for ($i=0; $i < sizeof($patternGiven); $i++) { 
+        //     if(in_array($patternGiven[$i], $c))
+        //         array_push($pattern, 'c');
+        //     else if(in_array($patternGiven[$i], $ms))
+        //         array_push($pattern, 'ms');
+        //     else if(in_array($patternGiven[$i], $db))
+        //         array_push($pattern, 'db');
+        //     else if(in_array($patternGiven[$i], $of))
+        //         array_push($pattern, 'of');
+        //    	else if(in_array($patternGiven[$i], $h))
+        //         array_push($pattern, 'h');
+        // }
         
     	$numbers = [];
 

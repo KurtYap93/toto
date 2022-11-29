@@ -5,8 +5,8 @@
 <h2>HTML Forms</h2>
 
 <form action="{{url('')}}" method="post">
-  <label for="numberSet">Toto number:</label><br>
-  <input type="text" id="numberSet" name="numberSet" value=""><br><br>
+  <label for="pattern">Pattern:</label><br>
+  <input type="text" id="pattern" name="patternGiven" value=""><br><br>
   <label for="c">C:</label><br>
   <input type="text" id="c" name="c" value=""><br><br>
   <label for="db">DB:</label><br>
