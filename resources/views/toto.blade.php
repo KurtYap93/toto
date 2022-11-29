@@ -15,6 +15,8 @@
   <input type="text" id="ms" name="ms" value=""><br><br>
   <label for="of">OF:</label><br>
   <input type="text" id="of" name="of" value=""><br><br>
+  <label for="h">H:</label><br>
+  <input type="text" id="h" name="h" value=""><br><br>
   <input type="submit" value="Submit">
 </form> 
 

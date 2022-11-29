@@ -17,6 +17,7 @@ class TestingController extends Controller
         $ms = explode(',',$input['ms']);
         $db = explode(',',$input['db']);
         $of = explode(',',$input['of']);
+        $h = explode(',',$input['h']);
 
         // $number = explode('', $input['numberSet']);
         // dd(strlen($input['numberSet']));
@@ -29,6 +30,8 @@ class TestingController extends Controller
             else if(in_array($input['numberSet'][$i], $db))
                 array_push($pattern, 'db');
             else if(in_array($input['numberSet'][$i], $of))
+                array_push($pattern, 'of');
+           	else if(in_array($input['numberSet'][$i], $h))
                 array_push($pattern, 'of');
         }
         
