@@ -32,7 +32,7 @@ class TestingController extends Controller
             else if(in_array($input['numberSet'][$i], $of))
                 array_push($pattern, 'of');
            	else if(in_array($input['numberSet'][$i], $h))
-                array_push($pattern, 'of');
+                array_push($pattern, 'h');
         }
         
     	$numbers = [];
