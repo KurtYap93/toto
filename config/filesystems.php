@@ -54,16 +54,7 @@ return [
             'endpoint' => env('AWS_ENDPOINT'),
             'use_path_style_endpoint' => env('AWS_USE_PATH_STYLE_ENDPOINT', false),
             'throw' => false,
-        ],
-         'azure' => [ // NB This need not be set to "azure", because it's just the name of the connection - feel free to call it what you want, or even set up multiple blobs with different names
-            'driver'    => 'azure', // As this is the name of the driver, this MUST be set to "azure"
-            'name'      => env('AZURE_STORAGE_NAME', 'nemysdbkpnp1'),
-            'key'       => env('AZURE_STORAGE_KEY', 'uIS4nmW4bLpgm948kFrj8A4mNq7uO8QBiBYAH0WqdAr9kQTDRvJjBTAx9yVIJ0Q53UXdII33UwhCU5hE9EgUOA=='),
-            'container' => env('AZURE_STORAGE_CONTAINER', 'image-test'),
-            'url'       => env('AZURE_STORAGE_URL', 'https://nemysdbkpnp1.blob.core.windows.net/image-test'),
-            'prefix'    => null,
-            'connection_string' => env('AZURE_STORAGE_CONNECTION_STRING', 'DefaultEndpointsProtocol=https;AccountName=nemysdbkpnp1;AccountKey=uIS4nmW4bLpgm948kFrj8A4mNq7uO8QBiBYAH0WqdAr9kQTDRvJjBTAx9yVIJ0Q53UXdII33UwhCU5hE9EgUOA==;EndpointSuffix=core.windows.net') // optional, will override default endpoint builder 
-        ],
+        ]
 
     ],
 
