@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('test', function() {
     // dd(file_get_contents(public_path('test.png')));
@@ -23,5 +23,5 @@ Route::get('test', function() {
     dd(Storage::url('test.png'));
 });
 
-Route::get('toto', 'App\Http\Controllers\TestingController@totoView');
-Route::post('toto', 'App\Http\Controllers\TestingController@toto');
+Route::get('/', 'App\Http\Controllers\TestingController@totoView');
+Route::post('/', 'App\Http\Controllers\TestingController@toto');
