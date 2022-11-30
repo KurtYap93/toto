@@ -20,7 +20,9 @@
   <input type="submit" value="Submit">
 </form> 
 
-<p>Result : {{$result}} </p>
+<p>Pattern : {{$lastPattern}} </p>
+<p>Result : {{$result}} </p><br>
+
 </body>
 </html>
 

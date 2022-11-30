@@ -8,7 +8,8 @@ class TestingController extends Controller
 {
 	public function totoView() {
         $result = '';
-		return view('toto', compact('result'));
+        $lastPattern = '';
+		return view('toto', compact('result', 'lastPattern'));
 	}
     public function toto(Request $request) {
         $input = $request->all();
@@ -98,6 +99,7 @@ class TestingController extends Controller
     	}
     	
         $result = implode(', ', $numbers);
-    	return view('toto', compact('result'));
+        $lastPattern = $input['patternGiven'];
+    	return view('toto', compact('result', 'lastPattern'));
     }
 }
